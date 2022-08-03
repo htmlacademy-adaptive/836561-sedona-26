@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Виталий Гаранжа](https://up.htmlacademy.ru/adaptive/26/user/836561).
-* Наставник: `Неизвестно`.
+* Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
 
 ---
 
