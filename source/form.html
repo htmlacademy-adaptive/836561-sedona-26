@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Оставить отзыв о Седоне</title>
 </head>
 
 <body class="page__form">
@@ -51,7 +51,7 @@
 
     <section class="">
       <h2 class="visually-hidden">Форма отыва</h2>
-      <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="review-form__fieldset">
           <legend class="review-form__legend">Представьтесь:</legend>
           <label class="review-form__label" for="">ИМЯ*:</label>
@@ -68,26 +68,50 @@
           <label class="review-form__label">Электронная почта*:</label>
           <input class="review-form__input" type="email">
         </fieldset>
+
         <fieldset class="review-form__fieldset">
           <legend class="review-form__legend">Ваше Общее впечатление:</legend>
-          <input class="review-form__input" type="radio">
-          <label class="review-form__label">Скорее положительное</label>
-          <input class="review-form__input" type="radio">
-          <label class="review-form__label">Скорее отрицательное</label>
-          <input class="review-form__input" type="radio">
-          <label class="review-form__label">Затрудняюсь ответить</label>
+          <label class="control" for="positive">
+            <input class="visually-hidden control__input" type="radio" id="positive" name="General-impression" value="positive" checked>
+            <span class="control__mark"></span>
+            <span class="control__label">Скорее положительное</span>
+          </label>
+          <label class="control" for="negative">
+            <input class="visually-hidden control__input" type="radio" id="negative" name="General-impression" value="negative">
+            <span class="control__mark"></span>
+            <span class="control__label">Скорее отрицательное</span>
+          </label>
+          <label class="control" for="no-answer">
+            <input class="visually-hidden control__input" type="radio" id="no-answer" name="General-impression" value="no-answer">
+            <span class="control__mark"></span>
+            <span class="control__label">Затрудняюсь ответить</span>
+          </label>
         </fieldset>
+
         <fieldset class="review-form__fieldset">
-          <legend class="review-form__legend">посещенные достопримечательности:</legend>
-          <input class="review-form__input" type="checkbox" checked>
-          <label class="review-form__label">Мост Дьявола</label>
-          <input class="review-form__input" type="checkbox" checked>
-          <label class="review-form__label">Гора-Колокол</label>
-          <input class="review-form__input" type="checkbox" checked>
-          <label class="review-form__label">Слайд-парк</label>
-          <input class="review-form__input" type="checkbox">
-          <label class="review-form__label">Красные скалы</label>
+          <legend class="review-form__legend">Посещенные достопримечательности:</legend>
+          <label class="control" for="devil-bridge">
+            <input class="visually-hidden control__input" type="checkbox" id="devil-bridge" name="Visited-attractions" value="devil-bridge" checked>
+            <span class="control__mark"></span>
+            <span class="control__label">Мост Дьявола</span>
+          </label>
+          <label class="control" for="mount-bell">
+            <input class="visually-hidden control__input" type="checkbox" id="mount-bell" name="Visited-attractions" value="mount-bell" checked>
+            <span class="control__mark"></span>
+            <span class="control__label">Гора-Колокол</span>
+          </label>
+          <label class="control" for="slide-park">
+            <input class="visually-hidden control__input" type="checkbox" id="slide-park" name="Visited-attractions" value="slide-park" checked>
+            <span class="control__mark"></span>
+            <span class="control__label">Слайд-парк</span>
+          </label>
+          <label class="control" for="red-rocks">
+            <input class="visually-hidden control__input" type="checkbox" id="red-rocks" name="Visited-attractions" value="red-rocks">
+            <span class="control__mark"></span>
+            <span class="control__label">Красные скалы</span>
+          </label>
         </fieldset>
+
         <fieldset class="review-form__fieldset">
           <legend class="review-form__legend">Опишите свои эмоции:</legend>
           <input class="review-form__input" type="text" placeholder="Опишите подробно все свои восторги">
@@ -98,24 +122,38 @@
     </section>
   </main>
 
-  <footer class="">
-    <ul class="">
-      <li class="">
-        <a class="" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Вконтакте</span>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <a href="" class="contacts__link">#visitSEDONA</a>
+      </div>
+      <div class="page-footer__social social">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <h2 class="copyright__text">Разработано</h2>
+        <a class="copyright__link" href="https://htmlacademy.ru/">
+          <img class="copyright__image" src="img/copyright.svg" width="30" height="34" alt="Логотип htmlacademy">
         </a>
-      </li>
-      <li class="">
-        <a class="" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Telegram</span>
-        </a>
-      </li>
-      <li class="">
-        <a class="" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">YouTube</span>
-        </a>
-      </li>
-    </ul>
+      </div>
+    </div>
   </footer>
 </body>
 
