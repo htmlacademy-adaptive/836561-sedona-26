@@ -1,13 +1,45 @@
-@import "blocks/main-header.less";
-@import "blocks/main-nav.less";
-@import "blocks/button.less";
-@import "blocks/nav-list.less";
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
 
-@import "blocks/main-header.less";
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import "blocks/page.scss";
+@import "blocks/button.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/nav-list.scss";
+
+@import "blocks/page-welcome.scss";
+@import "blocks/page-description.scss";
 
 
-@import "blocks/page-footer.less";
-@import "blocks/contacts.less";
-@import "blocks/social.less";
-@import "blocks/social-list.less";
-@import "blocks/copyright.less";
+
+@import "blocks/page-footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";
