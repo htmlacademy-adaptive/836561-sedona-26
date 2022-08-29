@@ -35,8 +35,14 @@
 
 @import "blocks/page-welcome.scss";
 @import "blocks/page-description.scss";
+@import "blocks/advantage.scss";
 
 
+//form.html
+@import "blocks/review-form.scss";
+
+//catalog.html
+@import "blocks/catalog-video.scss";
 
 @import "blocks/page-footer.scss";
 @import "blocks/contacts.scss";
