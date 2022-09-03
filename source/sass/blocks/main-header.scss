@@ -1,3 +1,17 @@
 .main-header {
+  display: flex;
+  flex-direction: column;
   outline: 1px solid #d71818;
+}
+
+.main-header__logo {
+  height: 96px;
+  outline: 2px solid rgb(9, 215, 136);
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__logo {
+
+  }
+
 }
