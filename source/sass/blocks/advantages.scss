@@ -1,0 +1,22 @@
+.advantages__list {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+
+.advantage__container {
+  color: #ffffff;
+  background-color: #81B3D2;
+}
+
+
+
+
+.advantages__item--color {
+  background-color: #EEEEEE;
+}

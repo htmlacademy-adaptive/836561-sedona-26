@@ -11,14 +11,16 @@
 
 @import "blocks/page-welcome.scss";
 @import "blocks/page-description.scss";
-@import "blocks/advantage.scss";
+@import "blocks/advantages.scss";
 
 
 //form.html
-@import "blocks/review-form.scss";
+@import "blocks/form.scss";
 
 //catalog.html
 @import "blocks/catalog-photos.scss";
+@import "blocks/catalog-item.scss";
+
 @import "blocks/catalog-video.scss";
 
 @import "blocks/page-footer.scss";
