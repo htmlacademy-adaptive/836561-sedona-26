@@ -1,7 +1,7 @@
 .button {
   padding: 15px 30px 13px;
   color: #ffffff;
-  background-color: #81B3D2;
+  background-color: $blue;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -10,4 +10,5 @@
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+  cursor: pointer;
 }
