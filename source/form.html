@@ -105,7 +105,7 @@
 
         <fieldset class="form__fieldset form__fieldset--attractions">
           <legend class="form__legend">Посещенные достопримечательности:</legend>
-          <div class="form__fieldset-wrapper">
+          <div class="form__fieldset-wrapper form__fieldset-wrapper--checkbox">
             <label class="form__label control" for="devil-bridge">
               <input class="visually-hidden control__input" type="checkbox" id="devil-bridge" name="visited-attractions" value="devil-bridge" checked>
               <span class="control__mark"></span>
@@ -174,6 +174,31 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal modal--close">
+    <div class="modal__container modal__container--error">
+      <div class="modal__text-wrapper">
+        <h2 class="modal__heading">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="modal__button-wrapper">
+        <button class="modal__button button" type="button">Ок</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal--close">
+    <div class="modal__container modal__container--success">
+      <div class="modal__text-wrapper">
+        <h2 class="modal__heading">Ваш отзыв отправлен!</h2>
+        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__button-wrapper">
+        <button class="modal__button button" type="button">Закрыть окно</button>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
