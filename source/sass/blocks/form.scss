@@ -72,6 +72,7 @@
 
 .form__fieldset-wrapper--checkbox{
   @media (min-width: $tablet-width) {
+    justify-content: space-between;
     padding: 84px;
     column-gap: 32px;
   }
@@ -121,6 +122,7 @@
 
 .form__warning {
   align-self: flex-end;
+  text-transform: uppercase;
   @media (min-width: $tablet-width) {
     align-self: center;
   }

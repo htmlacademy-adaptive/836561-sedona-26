@@ -45,14 +45,47 @@
   font-size: 21px;
   line-height: 26px;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+}
+
+.modal__heading--success {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 36px;
+    width: 150px;
+  }
 }
 
 .modal__description {
   font-size: 14px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .modal__button-wrapper {
-  padding: 20px;
+  padding: 0 70px 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 64px 49px
+  }
+
+
+}
+
+.modal__button-wrapper--success {
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 91px;
+  }
+}
+
+
+.modal__button {
+  width: 100%;
 }
