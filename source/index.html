@@ -3,31 +3,32 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">
+    <a class="main-header__logo logo" href="#">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
     </a>
     <nav class="main-header__navigation main-nav">
       <button class="main-nav__toggle button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list nav-list">
-        <li class="nav-list__item nav-list__item--active">
-          <a class="nav-list__link nav-list__link--active">Главная</a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link main-nav__link--active">Главная</a>
         </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="catalog.html">Фото и видео</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
         </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="form.html">Форма Отзыва</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Форма Отзыва</a>
         </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
         </li>
       </ul>
     </nav>
@@ -45,55 +46,59 @@
     </section>
 
     <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
       <div class="advantages__wrapper">
-        <h2 class="visually-hidden">Преимущества</h2>
         <ol class="advantages__list advantages-list">
-          <li class="advantages__item advantage">
-            <div class="advantage__container">
-              <h3 class="advantages__title">Настоящий городок</h3>
-              <p class="">— №1 —</p>
-              <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <li class="advantages__item advantages__item--image-city">
+            <div class="advantages__item-wrapper">
+              <div class="advantages__container">
+                <h3 class="advantages__title">Настоящий городок</h3>
+                <p class="advantages__description">— №1 —</p>
+                <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <img class="advantages__image-city" src="img/advantages-1.jpg" width="320" height="260"
+                alt="Двухэтажный нежилой дом коммерческого использования">
             </div>
-            <img class="advantages__item-image" src="img/advantages-1.jpg" width="320" height="260"
-              alt="Двухэтажный нежилой дом коммерческого использования">
             <ul class="advantages-item-list">
               <li class="advantages-item-list__item">
-                <p class="advantages-item-list__title">Жильё</p>
-                <p class="advantages-item-list__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="advantages__title advantages-item-list__title">Жильё</p>
+                <p class="advantages__description advantages-item-list__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="advantages-item-list__item">
-                <p class="advantages-item-list__title">Еда</p>
-                <p class="advantages-item-list__description">Всегда заказывайте топовый фирменный бургер, вы не
+                <p class="advantages__title advantages-item-list__title">Еда</p>
+                <p class="advantages__description advantages-item-list__description">Всегда заказывайте топовый фирменный бургер, вы не
                   разочаруетесь!</p>
               </li>
               <li class="advantages-item-list__item">
-                <p class="advantages-item-list__title">Сувениры</p>
-                <p class="advantages-item-list__description">Не только китайского, но и настоящего местного
+                <p class="advantages__title advantages-item-list__title">Сувениры</p>
+                <p class="advantages__description advantages-item-list__description">Не только китайского, но и настоящего местного
                   производства!</p>
               </li>
             </ul>
           </li>
-          <li class="advantages__item advantage">
-            <img class="advantages__item-image" src="img/advantages-2.jpg" width="320" height="260" alt="Мост дьявола">
-            <div class="advantage__container">
-              <h3 class="advantages__title"> Там есть мост дьявола</h3>
-              <p class="">— №2 —</p>
-              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <li class="advantages__item advantages__item--image-bridge">
+            <div class="advantages__item-wrapper">
+              <img class="advantages__image-bridge" src="img/advantages-2.jpg" width="320" height="260" alt="Мост дьявола">
+              <div class="advantages__container">
+                <h3 class="advantages__title"> Там есть мост дьявола</h3>
+                <p class="advantages__description">— №2 —</p>
+                <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
             </div>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantages__item--color advantage">
             <h3 class="advantages__title">Небольшая площадь</h3>
-            <p class="">— №3 —</p>
+            <p class="advantages__description">— №3 —</p>
             <p class="advantages__description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages__item advantage">
-            <h3 class="">Красивая дорога</h3>
-            <p class="">— №4 —</p>
+          <li class="advantages__item advantages__item--color advantage">
+            <h3 class="advantages__title">Красивая дорога</h3>
+            <p class="advantages__description">— №4 —</p>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantages__item--color advantage">
             <h3 class="advantages__title">Мало туристов </h3>
-            <p class="">— №5 —</p>
+            <p class="advantages__description">— №5 —</p>
             <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>

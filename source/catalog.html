@@ -9,42 +9,39 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page__catalog">
+<body class="page__body">
+
+
 
   <header class="main-header">
-    <a class="main-header__logo" href="#">
+    <a class="main-header__logo logo" href="#">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <nav class="main-header__navigation main-nav">
+      <button class="main-nav__toggle button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list nav-list">
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="nav-list__item nav-list__item--active">
-            <a class="nav-list__link nav-list__link--active">Фото и видео</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="form.html">Форма Отзыва</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link main-nav__link--active">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Форма Отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">HTML ACADEMY</a>
+        </li>
+      </ul>
     </nav>
   </header>
-
-
 
   <main class="catalog">
       <section class="page-welcome page-welcome--short">
         <img src="img/welcome-logo-short.svg" width="229" height="39" alt="Добро пожаловать в великолепный город Седона">
       </section>
-
 
       <section class="page-description">
         <h1 class="page-description__title">Фото и видео</h1>
@@ -53,30 +50,38 @@
 
     <section class="catalog-photos">
       <h2 class="visually-hidden">Галерея достопримечательностей Седоны</h2>
-      <ul class="catalog-photos__list catalog-list">
-        <li class="catalog-list__item">
-          <img class="catalog-list__image" src="img/card-sunset.jpg" width="280" height="280" alt="Загородная трасса на фоне заката">
-          <h3 class="">Неродные просторы</h3>
-          <p class="">Автор фото: <span class="">Борис</span></p>
-          <span class="">1350</span>
+      <ul class="catalog-photos__list">
+        <li class="catalog-photos__item catalog-item">
+          <img class="catalog-item__image" src="img/card-sunset.jpg" width="280" height="280" alt="Загородная трасса на фоне заката">
+          <div class="catalog-item__wrapper">
+            <h3 class="catalog-item__title">Неродные просторы</h3>
+            <p class="catalog-item__author">Автор фото: <span class="">Борис</span></p>
+            <span class="">1350</span>
+          </div>
         </li>
-        <li class="catalog-list__item">
-          <img class="catalog-list__image" src="img/card-cactus.png" width="280" height="280" alt="Кактус на фоне красных скал Седоны">
-          <h3 class="">Местная растительность</h3>
-          <p class="">Автор фото: <span class="">Сергей</span></p>
-          <span class="">143</span>
+        <li class="catalog-photos__item catalog-item">
+          <img class="catalog-item__image" src="img/card-cactus.png" width="280" height="280" alt="Кактус на фоне красных скал Седоны">
+          <div class="catalog-item__wrapper">
+            <h3 class="catalog-item__title">Местная растительность</h3>
+            <p class="catalog-item__author">Автор фото: <span class="">Сергей</span></p>
+            <span class="">143</span>
+          </div>
         </li>
-        <li class="catalog-list__item">
-          <img class="catalog-list__image" src="img/card-forest.png" width="280" height="280" alt="Дорога в виде горного серпантина">
-          <h3 class="">Дорога на север</h3>
-          <p class="">Автор фото: <span class="">Петр</span></p>
-          <span class="">96</span>
+        <li class="catalog-photos__item catalog-item">
+          <img class="catalog-item__image" src="img/card-forest.png" width="280" height="280" alt="Дорога в виде горного серпантина">
+          <div class="catalog-item__wrapper">
+            <h3 class="catalog-item__title">Дорога на север</h3>
+            <p class="catalog-item__author">Автор фото: <span class="">Петр</span></p>
+            <span class="">96</span>
+          </div>
         </li>
-        <li class="catalog-list__item">
-          <img class="catalog-list__image" src="img/card-canyon.jpg" width="280" height="280" alt="Красные скалы седоны">
-          <h3 class="">Мост дьявола</h3>
-          <p class="">Автор фото: <span class="">Антон</span></p>
-          <span class="">254</span>
+        <li class="catalog-photos__item catalog-item">
+          <img class="catalog-item__image" src="img/card-canyon.jpg" width="280" height="280" alt="Красные скалы седоны">
+          <div class="catalog-item__wrapper">
+            <h3 class="catalog-item__title">Мост дьявола</h3>
+            <p class="catalog-item__author">Автор фото: <span class="">Антон</span></p>
+            <span class="">254</span>
+          </div>
         </li>
       </ul>
     </section>

@@ -1,0 +1,26 @@
+.advantages-item-list {
+  display: grid;
+  list-style-type: none;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+}
+
+.advantages-item-list__item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 52px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 158px 36px 60px;
+  }
+}
+
+.advantages-item-list__title {
+  margin: 0;
+  margin-bottom: 30px;
+}

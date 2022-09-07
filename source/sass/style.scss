@@ -1,38 +1,26 @@
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-@import "blocks/fonts.scss";
-
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
 @import "blocks/page.scss";
+@import "blocks/visually-hidden.scss";
 @import "blocks/button.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/nav-list.scss";
-
 @import "blocks/page-welcome.scss";
 @import "blocks/page-description.scss";
-@import "blocks/advantage.scss";
-
+@import "blocks/advantages.scss";
+@import "blocks/advantages-item-list.scss";
 
 //form.html
-@import "blocks/review-form.scss";
+@import "blocks/form.scss";
+@import "blocks/control.scss";
+@import "blocks/modal.scss";
 
 //catalog.html
+@import "blocks/catalog-photos.scss";
+@import "blocks/catalog-item.scss";
 @import "blocks/catalog-video.scss";
-
 @import "blocks/page-footer.scss";
 @import "blocks/contacts.scss";
-@import "blocks/social.scss";
 @import "blocks/social-list.scss";
 @import "blocks/copyright.scss";

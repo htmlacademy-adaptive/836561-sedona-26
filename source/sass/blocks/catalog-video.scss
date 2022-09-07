@@ -1,20 +1,29 @@
 .catalog-video {
-  padding-top: 60px;
+  padding: 20px;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .catalog-video__heading {
+
+  margin: 0;
+  padding-bottom: 36px;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 18px;
   line-height: 26px;
 }
 
 .catalog-video__description {
+  margin: 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
-  line-height: 26px;
-}
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 36px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
+}
