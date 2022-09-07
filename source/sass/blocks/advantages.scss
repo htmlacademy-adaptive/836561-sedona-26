@@ -8,7 +8,6 @@
   }
 }
 
-
 // .advantages__wrapper {
 //   display: flex;
 //   flex-direction: column;
@@ -85,16 +84,12 @@
   }
 }
 
-
 .advantages__container {
   flex-direction: column;
   color: #ffffff;
-  background-color: #81B3D2;
+  background-color: $blue;
 }
 
-
-
-
 .advantages__item--color {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }

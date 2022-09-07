@@ -1,5 +1,4 @@
 .main-nav {
-
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -25,9 +24,7 @@
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
   }
-
 }
-
 
 .main-nav__item:nth-child(4n-1) {
   @media (min-width: $tablet-width) {
@@ -35,10 +32,7 @@
   }
 }
 
-
-
 .main-nav__toggle {
-
   @media (min-width: $tablet-width) {
     display: none;
   }

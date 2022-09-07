@@ -5,13 +5,13 @@
   padding: 29px 20px 23px;
 
   @media (min-width: $tablet-width) {
-      padding: 36px 60px;
-      flex-direction: row;
-      justify-content: space-between;
+    padding: 36px 60px;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-      padding: 36px 120px;
+    padding: 36px 120px;
   }
 }
 

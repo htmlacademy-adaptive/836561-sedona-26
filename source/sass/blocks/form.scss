@@ -19,15 +19,11 @@
   margin: 0;
   padding: 0;
   border: none;
-  outline: 1px solid rgb(222, 45, 45);
-
-
 }
 
 .form__fieldset--impression,
 .form__fieldset--attractions,
 .form__fieldset--emotions {
-
   @media (min-width: $tablet-width) {
     grid-column: span 2;
   }
@@ -70,7 +66,7 @@
   }
 }
 
-.form__fieldset-wrapper--checkbox{
+.form__fieldset-wrapper--checkbox {
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding: 84px;
@@ -94,7 +90,7 @@
   width: 100%;
   padding: 16px;
   font-family: "PT Sans", "Arial", sans-serif;
-  background-color: #F2F2F2;
+  background-color: $grey;
   border: none;
   font-weight: 700;
   font-size: 18px;
@@ -123,6 +119,7 @@
 .form__warning {
   align-self: flex-end;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     align-self: center;
   }
