@@ -12,15 +12,35 @@
 .advantages-item-list__item {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding-left: 52px;
-  text-align: center;
+  padding-top: 31px;
+  background-repeat: no-repeat;
+  background-position-y: 23px;
 
   @media (min-width: $tablet-width) {
     padding: 158px 36px 60px;
+    background-position: 50% 60px;
   }
+}
+
+.advantages-item-list__item--home {
+  background-image: url("/img/home.svg");
+}
+
+.advantages-item-list__item--food {
+  background-image: url("/img/food.svg");
+}
+
+.advantages-item-list__item--souvenir {
+  background-image: url("/img/souvenir.svg");
 }
 
 .advantages-item-list__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
+}
+
+.advantages-item-list__description {
+  text-align: left;
 }

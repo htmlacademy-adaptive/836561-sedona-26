@@ -1,0 +1,34 @@
+.searching__wrapper {
+  padding: 18px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 460px;
+  }
+}
+
+.searching__title {
+  margin: 0;
+  margin-bottom: 26px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.searching__description {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.searching__button {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin: 0 auto;
+  }
+}

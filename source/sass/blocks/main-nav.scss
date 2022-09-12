@@ -9,10 +9,21 @@
   background-color: #ffffff;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 68px;
+  height: 56px;
+  background: none;
+  z-index: 2;
+  outline: 1px solid tomato;
 
-// .main-nav--closed {
-
-// }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
@@ -33,25 +44,63 @@
 }
 
 
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 25px;
+  width: 23px;
+  height: 4px;
+  background-color: $white;
+  box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+}
+
+.main-nav--opened .main-nav__toggle:active::before {
+  background-color: fade($white, 30%);
+  box-shadow:
+    0 8px 0 0 fade($white, 30%),
+    0 16px 0 0 fade($white, 30%);
+}
+
+// .main-nav--nojs .main-nav__toggle {
+//   display: none;
+// }
 
 .main-nav__list {
-  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: $blue;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
+    background-color: $white;
   }
 }
 
+.main-nav--closed .main-nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+}
+
+
 .main-nav__item {
-  background-color: $blue;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
+    color: #000000;
   }
 }
 
@@ -61,27 +110,9 @@
   }
 }
 
-.main-nav__toggle {
-  position: absolute;
-  display: block;
-  top: 0;
-  right: 0;
-  width: 68px;
-  height: 56px;
-  background: none;
-  z-index: 2;
-  outline: 1px solid tomato;
-
-  &:hover,
-  &:active {
-    // background-color: #624530;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+.main-nav__item--active {
+  color: #766357;
 }
-
 
 
 .main-nav__link {
@@ -89,5 +120,11 @@
   padding: 18px 17px;
   text-align: center;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
