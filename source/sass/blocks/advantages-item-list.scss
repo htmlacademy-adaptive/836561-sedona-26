@@ -19,7 +19,8 @@
   background-position-y: 23px;
 
   @media (min-width: $tablet-width) {
-    padding: 158px 36px 60px;
+    align-items: center;
+    padding: 158px 32px 42px;
     background-position: 50% 60px;
   }
 }
@@ -43,4 +44,8 @@
 
 .advantages-item-list__description {
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
