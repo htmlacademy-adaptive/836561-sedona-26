@@ -5,10 +5,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 60px;
+    gap: 48px 70px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 120px;
+    gap: 56px 128px;
   }
 }
 
@@ -19,6 +21,7 @@
   margin: 0;
   padding: 0;
   border: none;
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .form__fieldset--impression,
@@ -30,12 +33,15 @@
 }
 
 .form__fieldset--emotions {
+  margin-bottom: 56px;
+
   @media (min-width: $desktop-width) {
     padding: 0 96px;
   }
 }
 
 .form__legend {
+  padding-top: 20px;
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -46,6 +52,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    padding-top: 0;
   }
 }
 
@@ -69,12 +76,13 @@
 .form__fieldset-wrapper--checkbox {
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 84px;
+    padding: 8px 84px;
     column-gap: 32px;
   }
 }
 
 .form__label {
+  margin-bottom: 16px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -97,6 +105,7 @@
   line-height: 26px;
 }
 
+
 .form__input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -117,10 +126,14 @@
 }
 
 .form__warning {
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.6);
   align-self: flex-end;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     align-self: center;
+    color: #000000;
   }
 }

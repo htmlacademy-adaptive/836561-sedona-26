@@ -5,7 +5,8 @@
 }
 
 .main-header__logo {
-  position: absolute;
-  left: calc(50% - 92.5px);
-  height: 96px;
+    position: absolute;
+    left: calc(50% - 92.5px);
+    height: 96px;
+    z-index: 2;
 }
