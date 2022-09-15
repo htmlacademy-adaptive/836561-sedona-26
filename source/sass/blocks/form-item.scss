@@ -1,0 +1,62 @@
+.form-item {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.form-item__mark {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-color: $grey;
+  border-radius: 4px;
+}
+
+.form-item__label {
+  margin-left: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.form-item:hover .form-item__mark {
+  background-color: #E5E5E5;
+}
+
+.form-item:focus-within .form-item__mark {
+  background-color: #E5E5E5;
+  outline: 2px solid #5496BD;
+}
+
+.form-item:active .form-item__mark {
+  background-color:  #D5D5D5;
+}
+
+.form-item__input:disabled ~ .form-item__mark {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-item__input[type="checkbox"]:checked + .form-item__mark {
+  background-image: url("/img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* радиокнопки */
+
+.form-item__input[type="radio"] + .form-item__mark {
+  border-radius: 50%;
+}
+
+.form-item__input[type="radio"]:checked + .form-item__mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+  content: "";
+}

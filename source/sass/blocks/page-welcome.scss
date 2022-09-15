@@ -10,6 +10,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 78px;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/description-background@2x.jpg");
+    background-size: 1200px auto;
+  }
 }
 
 .page-welcome--short {

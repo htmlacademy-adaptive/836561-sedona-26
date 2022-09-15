@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оставить отзыв о Седоне</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -85,20 +89,20 @@
         <fieldset class="form__fieldset form__fieldset--impression">
           <legend class="form__legend">Ваше Общее впечатление:</legend>
           <div class="form__fieldset-wrapper">
-            <label class="form__label control" for="positive">
-              <input class="visually-hidden control__input" type="radio" id="positive" name="general-impression" value="positive" checked>
-              <span class="control__mark"></span>
-              <span class="control__label">Скорее положительное</span>
+            <label class="form__label form-item form-item--radio" for="positive">
+              <input class="visually-hidden form-item__input" type="radio" id="positive" name="general-impression" value="positive" checked>
+              <span class="form-item__mark"></span>
+              <span class="form-item__label">Скорее положительное</span>
             </label>
-            <label class="form__label control" for="negative">
-              <input class="visually-hidden control__input" type="radio" id="negative" name="general-impression" value="negative">
-              <span class="control__mark"></span>
-              <span class="control__label">Скорее отрицательное</span>
+            <label class="form__label form-item form-item--radio" for="negative">
+              <input class="visually-hidden form-item__input" type="radio" id="negative" name="general-impression" value="negative">
+              <span class="form-item__mark"></span>
+              <span class="form-item__label">Скорее отрицательное</span>
             </label>
-            <label class="form__label control" for="no-answer">
-              <input class="visually-hidden control__input" type="radio" id="no-answer" name="general-impression" value="no-answer">
-              <span class="control__mark"></span>
-              <span class="control__label">Затрудняюсь ответить</span>
+            <label class="form__label form-item form-item--radio" for="no-answer">
+              <input class="visually-hidden form-item__input" type="radio" id="no-answer" name="general-impression" value="no-answer">
+              <span class="form-item__mark"></span>
+              <span class="form-item__label">Затрудняюсь ответить</span>
             </label>
           </div>
         </fieldset>
@@ -106,32 +110,32 @@
         <fieldset class="form__fieldset form__fieldset--attractions">
           <legend class="form__legend">Посещенные <br> достопримечательности:</legend>
           <div class="form__fieldset-wrapper form__fieldset-wrapper--checkbox">
-            <label class="form__label control" for="devil-bridge">
-              <input class="visually-hidden control__input" type="checkbox" id="devil-bridge" name="visited-attractions" value="devil-bridge" checked>
-              <span class="control__mark"></span>
-              <span class="control__label">Мост Дьявола</span>
+            <label class="form__label form-item form-item--checkbox" for="devil-bridge">
+              <input class="visually-hidden form-item__input" type="checkbox" id="devil-bridge" name="visited-attractions" value="devil-bridge" checked>
+              <span class="form-item__mark"></span>
+              <span class="form-item__label">Мост Дьявола</span>
             </label>
-            <label class="form__label control" for="mount-bell">
-              <input class="visually-hidden control__input" type="checkbox" id="mount-bell" name="visited-attractions" value="mount-bell" checked>
-              <span class="control__mark"></span>
-              <span class="control__label">Гора-Колокол</span>
+            <label class="form__label form-item form-item--checkbox" for="mount-bell">
+              <input class="visually-hidden form-item__input" type="checkbox" id="mount-bell" name="visited-attractions" value="mount-bell" checked>
+              <span class="form-item__mark"></span>
+              <span class="form-item__label">Гора-Колокол</span>
             </label>
-            <label class="form__label control" for="slide-park">
-              <input class="visually-hidden control__input" type="checkbox" id="slide-park" name="visited-attractions" value="slide-park" checked>
-              <span class="control__mark"></span>
-              <span class="control__label">Слайд-парк</span>
+            <label class="form__label form-item form-item--checkbox" for="slide-park">
+              <input class="visually-hidden form-item__input" type="checkbox" id="slide-park" name="visited-attractions" value="slide-park" checked>
+              <span class="form-item__mark"></span>
+              <span class="form-item__label">Слайд-парк</span>
             </label>
-            <label class="form__label control" for="red-rocks">
-              <input class="visually-hidden control__input" type="checkbox" id="red-rocks" name="visited-attractions" value="red-rocks">
-              <span class="control__mark"></span>
-              <span class="control__label">Красные скалы</span>
+            <label class="form__label form-item form-item--checkbox" for="red-rocks">
+              <input class="visually-hidden form-item__input" type="checkbox" id="red-rocks" name="visited-attractions" value="red-rocks">
+              <span class="form-item__mark"></span>
+              <span class="form-item__label">Красные скалы</span>
             </label>
           </div>
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--emotions">
           <legend class="form__legend">Опишите свои эмоции:</legend>
-          <textarea class="form__input form__input-textarea" name="Отзыв" id="review-text" cols="25" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__input form__input--textarea" name="Отзыв" id="review-text" cols="25" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <div class="form__buttons-container">
           <button class="form__button-submit button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
