@@ -6,9 +6,15 @@
   background-size: cover;
   text-align: center;
   background-position: 50%;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 78px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/description-background@2x.jpg");
+    background-size: 1200px auto;
   }
 }
 

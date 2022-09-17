@@ -61,13 +61,21 @@
   }
 }
 
-.advantages__image-city {
+.advantages__image-city-container {
   @media (min-width: $tablet-width) {
     grid-column: 2 / 4;
   }
 }
 
+.advantages__image-city,
 .advantages__image-bridge {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.advantages__image-bridge-container {
   @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
   }

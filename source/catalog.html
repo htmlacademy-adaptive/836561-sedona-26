@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -14,7 +18,7 @@
 
 
   <header class="main-header">
-    <a class="main-header__logo logo" href="#">
+    <a class="main-header__logo logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
     </a>
     <nav class="main-header__navigation main-nav main-nav--closed main-nav--nojs">
@@ -52,7 +56,13 @@
       <h2 class="visually-hidden">Галерея достопримечательностей Седоны</h2>
       <ul class="catalog-photos__list">
         <li class="catalog-photos__item catalog-item">
-          <img class="catalog-item__image" src="img/card-sunset.jpg" width="280" height="280" alt="Загородная трасса на фоне заката">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="../img/card-sunset-desktop.jpg 1x, img/card-sunset-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="../img/card-sunset-tablet.jpg 1x, img/card-sunset-tablet@2x.jpg 2x">
+            <img class="catalog-item__image" src="../img/card-sunset-mobile.jpg" srcset="../img/card-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Загородная трасса на фоне заката">
+          </picture>
           <div class="catalog-item__wrapper">
             <h3 class="catalog-item__title">Неродные просторы</h3>
             <p class="catalog-item__author">Автор фото: <span class="">Борис</span></p>
@@ -60,7 +70,13 @@
           </div>
         </li>
         <li class="catalog-photos__item catalog-item">
-          <img class="catalog-item__image" src="img/card-cactus.png" width="280" height="280" alt="Кактус на фоне красных скал Седоны">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="../img/card-cactus-desktop.jpg 1x, img/card-cactus-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="../img/card-cactus-tablet.jpg 1x, img/card-cactus-tablet@2x.jpg 2x">
+            <img class="catalog-item__image" src="../img/card-cactus-mobile.jpg" srcset="../img/card-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Кактус на фоне красных скал Седоны">
+          </picture>
           <div class="catalog-item__wrapper">
             <h3 class="catalog-item__title">Местная растительность</h3>
             <p class="catalog-item__author">Автор фото: <span class="">Сергей</span></p>
@@ -68,7 +84,13 @@
           </div>
         </li>
         <li class="catalog-photos__item catalog-item">
-          <img class="catalog-item__image" src="img/card-forest.png" width="280" height="280" alt="Дорога в виде горного серпантина">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="../img/card-forest-desktop.jpg 1x, img/card-forest-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="../img/card-forest-tablet.jpg 1x, img/card-forest-tablet@2x.jpg 2x">
+            <img class="catalog-item__image" src="../img/card-forest-mobile.jpg" srcset="../img/card-forest-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в виде горного серпантина">
+          </picture>
           <div class="catalog-item__wrapper">
             <h3 class="catalog-item__title">Дорога на север</h3>
             <p class="catalog-item__author">Автор фото: <span class="">Петр</span></p>
@@ -76,7 +98,13 @@
           </div>
         </li>
         <li class="catalog-photos__item catalog-item">
-          <img class="catalog-item__image" src="img/card-canyon.jpg" width="280" height="280" alt="Красные скалы седоны">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="../img/card-canyon-desktop.jpg 1x, img/card-canyon-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="../img/card-canyon-tablet.jpg 1x, img/card-canyon-tablet@2x.jpg 2x">
+            <img class="catalog-item__image" src="../img/card-canyon-mobile.jpg" srcset="../img/card-canyon-mobile@2x.jpg 2x" width="280" height="280" alt="Красные скалы седоны">
+          </picture>
           <div class="catalog-item__wrapper">
             <h3 class="catalog-item__title">Мост дьявола</h3>
             <p class="catalog-item__author">Автор фото: <span class="">Антон</span></p>
