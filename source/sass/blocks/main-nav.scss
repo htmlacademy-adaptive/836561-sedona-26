@@ -9,6 +9,11 @@
   background-color: #ffffff;
 }
 
+.main-nav--opened {
+  // position: absolute;
+  z-index: 3;
+}
+
 .main-nav__toggle {
   position: absolute;
   display: block;
@@ -18,7 +23,6 @@
   height: 56px;
   background: none;
   z-index: 2;
-  outline: 1px solid tomato;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -44,27 +48,44 @@
 }
 
 
-.main-nav--opened .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 17px;
-  left: 25px;
-  width: 23px;
-  height: 4px;
-  background-color: $white;
-  box-shadow: 0 8px 0 0 $white, 0 16px 0 0 $white;
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 18px;
+    width: 26px;
+    height: 4px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $white;
+  }
 }
 
-.main-nav--opened .main-nav__toggle:active::before {
-  background-color: fade($white, 30%);
-  box-shadow:
-    0 8px 0 0 fade($white, 30%),
-    0 16px 0 0 fade($white, 30%);
-}
+
 
 // .main-nav--nojs .main-nav__toggle {
 //   display: none;
 // }
+
+
+
 
 .main-nav__list {
   margin: 0;
@@ -110,9 +131,6 @@
   }
 }
 
-.main-nav__item--active {
-  color: #766357;
-}
 
 
 .main-nav__link {
@@ -126,5 +144,11 @@
 
   @media (min-width: $tablet-width) {
     color: #000000;
+  }
+}
+
+.main-nav__link--active {
+  @media (min-width: $tablet-width) {
+    color: #766357;
   }
 }

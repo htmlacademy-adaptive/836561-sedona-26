@@ -1,5 +1,21 @@
 .catalog-item__wrapper {
   @media (min-width: $tablet-width) {
     background-color: $grey;
+    padding: 22px 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0 0 0 / 30%);
+    color: #ffffff;
+  }
+}
+
+.catalog-item__image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
