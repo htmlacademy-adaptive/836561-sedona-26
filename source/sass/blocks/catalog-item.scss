@@ -37,3 +37,15 @@
   font-size: 14px;
   line-height: 21px;
 }
+
+.catalog-item__button-wrapper {
+  display: flex;
+}
+
+.catalog-item__button-like {
+  border: none;
+  background: none;
+}
+ .catalog-item__icon-like {
+  fill: #ffffff;
+ }

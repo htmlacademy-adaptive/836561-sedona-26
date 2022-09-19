@@ -111,6 +111,18 @@
   line-height: 26px;
 }
 
+.form__input:hover {
+  background-color: #E5E5E5;
+}
+
+.form__input:focus {
+outline: 2px solid #5496BD  ;
+  background-color: #E5E5E5;
+}
+
+.form__input:active {
+  background-color: #ffffff;
+}
 
 .form__input::placeholder {
   color: rgba(0, 0, 0, 0.3);
