@@ -1,7 +1,7 @@
 .page-welcome {
   padding: 90px 0;
   background-color: #acdbf9;
-  background-image: url("../img/description-background.jpg");
+  background-image: url("/img/description-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -13,8 +13,19 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/description-background@2x.jpg");
+    background-image: url("/img/description-background@2x.jpg");
     background-size: 1200px auto;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("/img/background-decorative.svg");
+    background-position-x: center;
+    height: 57px;
+    bottom: -1px;
+    width: 100%;
+    left: 0;
   }
 }
 

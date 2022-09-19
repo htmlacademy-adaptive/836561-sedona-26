@@ -16,11 +16,9 @@
 <body class="page__body">
 
   <svg style="display: none">
-
-    <symbol id="like" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path opacity="0.3"
-        d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-        fill="black" />
+    <symbol id="like" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
     </symbol>
     <symbol id="vk" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#a)">
@@ -101,8 +99,12 @@
               <p class="catalog-item__author">Автор фото: <span class="">Борис</span></p>
             </div>
             <div class="catalog-item__button-wrapper">
-              <button class="" type=""></button>
-              <span class="">1350</span>
+              <button class="catalog-item__button-like" type="">
+                <svg class="catalog-item__icon-like" width="24" height="24">
+                  <use xlink:href="#like"></use>
+                </svg>
+              </button>
+              <span class="catalog-item__like-counter">1350</span>
             </div>
           </div>
         </li>
@@ -127,7 +129,7 @@
                   <use xlink:href="#like"></use>
                 </svg>
               </button>
-              <span class="">143</span>
+              <span class="catalog-item__like-counter">143</span>
             </div>
           </div>
         </li>
@@ -152,18 +154,18 @@
                   <use xlink:href="#like"></use>
                 </svg>
               </button>
-              <span class="">96</span>
+              <span class="catalog-item__like-counter">96</span>
             </div>
           </div>
         </li>
         <li class="catalog-photos__item catalog-item">
           <picture>
             <source media="(min-width: 1200px)"
-              srcset="../img/card-canyon-desktop.jpg 1x, img/card-canyon-desktop@2x.jpg 2x">
+              srcset="img/card-canyon-desktop.jpg 1x, img/card-canyon-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-              srcset="../img/card-canyon-tablet.jpg 1x, img/card-canyon-tablet@2x.jpg 2x">
-            <img class="catalog-item__image" src="../img/card-canyon-mobile.jpg"
-              srcset="../img/card-canyon-mobile@2x.jpg 2x" width="280" height="280" alt="Красные скалы седоны">
+              srcset="img/card-canyon-tablet.jpg 1x, img/card-canyon-tablet@2x.jpg 2x">
+            <img class="catalog-item__image" src="img/card-canyon-mobile.jpg"
+              srcset="img/card-canyon-mobile@2x.jpg 2x" width="280" height="280" alt="Красные скалы седоны">
           </picture>
           <div class="catalog-item__container">
             <div class="catalog-item__author-wrapper">
@@ -171,8 +173,12 @@
               <p class="catalog-item__author">Автор фото: <span class="">Антон</span></p>
             </div>
             <div class="catalog-item__button-wrapper">
-              <button class="" type=""></button>
-              <span class="">254</span>
+              <button class="catalog-item__button-like" type="">
+                <svg class="catalog-item__icon-like" width="24" height="24">
+                  <use xlink:href="#like"></use>
+                </svg>
+              </button>
+              <span class="catalog-item__like-counter">254</span>
             </div>
           </div>
         </li>
@@ -183,7 +189,15 @@
       <h2 class="catalog-video__heading">Все еще сомневаетесь?</h2>
       <p class="catalog-video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</p>
-      <img class="" src="img/video-preview.jpg" width="280" height="177" alt="Превью видеопрезентации Седоны">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
+          <img class="catalog-item__image" src="img/video-preview-mobile.jpg"
+            srcset="img/video-preview-mobile@2x.jpg 2x" width="280" height="177"
+            alt="Загородная трасса на фоне заката">
+        </picture>
     </section>
 
   </main>
