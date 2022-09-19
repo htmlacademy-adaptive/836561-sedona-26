@@ -198,13 +198,20 @@ img {
   }
 }
 
+.main-nav__item--last {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
 .main-nav__link {
   display: block;
-  padding: 18px 17px;
+  padding: 17px 0 12px;
   text-align: center;
   text-decoration: none;
+  font-size: 18px;
+  line-height: 26px;
   color: #ffffff;
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
 @media (min-width: 768px) {
   .main-nav__link {
@@ -221,7 +228,7 @@ img {
 .page-welcome {
   padding: 90px 0;
   background-color: #acdbf9;
-  background-image: url("../img/description-background.jpg");
+  background-image: url("/img/description-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -235,9 +242,19 @@ img {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .page-welcome {
-    background-image: url("../img/description-background@2x.jpg");
+    background-image: url("/img/description-background@2x.jpg");
     background-size: 1200px auto;
   }
+}
+.page-welcome::after {
+  content: "";
+  position: absolute;
+  background-image: url("/img/background-decorative.svg");
+  background-position-x: center;
+  height: 57px;
+  bottom: -1px;
+  width: 100%;
+  left: 0;
 }
 
 .page-welcome--short {
@@ -604,6 +621,7 @@ img {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .form__label-heading {
@@ -638,6 +656,29 @@ img {
 
 .form__input::placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.form__input--icon {
+  padding-right: 48px;
+}
+
+.form__icon {
+  position: absolute;
+  background-color: #e6e6e6;
+  bottom: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__icon--phone {
+  background-image: url("/img/phone.svg");
+}
+
+.form__icon--email {
+  background-image: url("/img/letter.svg");
 }
 
 .form__buttons-container {
@@ -848,11 +889,13 @@ img {
 }
 
 .catalog-photos__item {
-  padding: 24px 20px 25px;
+  padding: 24px 20px 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 @media (min-width: 768px) {
   .catalog-photos__item {
     padding: 0;
+    border: none;
   }
 }
 @media (min-width: 1200px) {
@@ -870,6 +913,7 @@ img {
 .catalog-item__container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 25px;
 }
 @media (min-width: 768px) {
   .catalog-item__container {
@@ -886,6 +930,7 @@ img {
     left: 0;
     bottom: 0;
     width: 100%;
+    padding-bottom: 15px;
     background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
   }
@@ -895,30 +940,55 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .catalog-item__image {
+    margin-bottom: 0;
+  }
 }
 
 .catalog-item__title {
   margin: 0;
   margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 .catalog-item__author {
   margin: 0;
+  margin-bottom: 11px;
   font-size: 14px;
   line-height: 21px;
 }
 
 .catalog-item__button-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .catalog-item__button-like {
   border: none;
   background: none;
+  padding: 0;
 }
 
 .catalog-item__icon-like {
-  fill: #ffffff;
+  fill: rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 1200px) {
+  .catalog-item__icon-like {
+    fill: #ffffff;
+  }
+}
+
+.catalog-item__like-counter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 9px;
 }
 
 .catalog-video {
@@ -926,6 +996,16 @@ img {
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .catalog-video {
+    padding: 58px 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .catalog-video {
+    padding: 62px 200px;
+  }
 }
 
 .catalog-video__heading {
@@ -947,6 +1027,8 @@ img {
 }
 @media (min-width: 768px) {
   .catalog-video__description {
+    width: 445px;
+    margin: 0 auto;
     margin-bottom: 66px;
   }
 }
