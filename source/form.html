@@ -15,7 +15,6 @@
 
 <body class="page__body">
 
-
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны">
@@ -78,11 +77,13 @@
           <legend class="form__legend">Контактная информация:</legend>
           <label class="form__label">
             <span class="form__label-heading">Контактный телефон*:</span>
-            <input class="form__input" type="tel" placeholder="Введите телефон">
+            <input class="form__input form__input--icon" type="tel" placeholder="Введите телефон">
+            <span class="form__icon form__icon--phone"></span>
           </label>
           <label class="form__label">
             <span class="form__label-heading">Электронная почта*:</span>
-            <input class="form__input" type="email" placeholder="Введите e-mail">
+            <input class="form__input form__input--icon" type="email" placeholder="Введите e-mail">
+            <span class="form__icon form__icon--email"></span>
           </label>
         </fieldset>
 
@@ -150,21 +151,30 @@
       <div class="page-footer__contacts contacts">
         <a class="contacts__link" href="#">#visitSEDONA</a>
       </div>
-      <div class="page-footer__social social">
+      <div class="page-footer__social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <ul class="social__list social-list">
+        <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">
+              <svg class="social-list__icon" width="24" height="24">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <a class="social-list__link social-list__link--telegram" href="https://t.me/htmlacademy">
+              <svg class="social-list__icon" width="24" height="24">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <svg class="social-list__icon" width="24" height="24">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>

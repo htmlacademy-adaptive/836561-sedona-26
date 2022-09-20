@@ -3,6 +3,11 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__link {

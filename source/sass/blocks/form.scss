@@ -21,7 +21,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid $lightgrey;
 }
 
 .form__fieldset--impression,
@@ -92,6 +92,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .form__label-heading {
@@ -111,9 +112,44 @@
   line-height: 26px;
 }
 
+.form__input:hover {
+  background-color: $lightgrey;
+}
+
+.form__input:focus {
+  outline: 2px solid #5496bd;
+  background-color: $lightgrey;
+}
+
+.form__input:active {
+  background-color: #ffffff;
+}
 
 .form__input::placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.form__input--icon {
+  padding-right: 48px;
+}
+
+.form__icon {
+  position: absolute;
+  background-color: #e6e6e6;
+  bottom: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__icon--phone {
+  background-image: url("../img/phone.svg");
+}
+
+.form__icon--email {
+  background-image: url("../img/letter.svg");
 }
 
 .form__buttons-container {

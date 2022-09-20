@@ -1,12 +1,11 @@
 .main-header {
   display: flex;
   flex-direction: column;
-  outline: 1px solid #d71818;
 }
 
 .main-header__logo {
-    position: absolute;
-    left: calc(50% - 92.5px);
-    height: 96px;
-    z-index: 2;
+  position: absolute;
+  left: calc(50% - 92.5px);
+  height: 96px;
+  z-index: 2;
 }
