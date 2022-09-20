@@ -21,16 +21,16 @@
 }
 
 .form-item:hover .form-item__mark {
-  background-color: #E5E5E5;
+  background-color: $lightgrey;
 }
 
 .form-item:focus-within .form-item__mark {
-  background-color: #E5E5E5;
-  outline: 2px solid #5496BD;
+  background-color: $lightgrey;
+  outline: 2px solid #5496bd;
 }
 
 .form-item:active .form-item__mark {
-  background-color:  #D5D5D5;
+  background-color: #d5d5d5;
 }
 
 .form-item__input:disabled ~ .form-item__mark {

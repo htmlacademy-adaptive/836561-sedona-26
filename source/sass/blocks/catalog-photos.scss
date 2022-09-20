@@ -15,7 +15,6 @@
   }
 }
 
-
 .catalog-photos__item {
   padding: 24px 20px 0;
   border-bottom: 1px solid #e5e5e5;
@@ -24,8 +23,9 @@
     padding: 0;
     border: none;
   }
+
   @media (min-width: $desktop-width) {
-    position: relative;;
+    position: relative;
   }
 }
 

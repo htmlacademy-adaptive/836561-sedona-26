@@ -27,11 +27,20 @@
   width: 100%;
   object-fit: cover;
   margin-bottom: 15px;
+  background-color: #acdbf9;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    max-height: 267px;
   }
 }
+
+.catalog-item:first-child .catalog-item__image {
+  @media (min-width: $tablet-width) {
+    max-height: 400px;
+  }
+}
+
 
 .catalog-item__title {
   margin: 0;

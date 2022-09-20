@@ -13,14 +13,14 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/description-background@2x.jpg");
+    background-image: url("../img/description-background@2x.jpg");
     background-size: 1200px auto;
   }
 
   &::after {
     content: "";
     position: absolute;
-    background-image: url("/img/background-decorative.svg");
+    background-image: url("../img/background-decorative.svg");
     background-position-x: center;
     height: 57px;
     bottom: -1px;
