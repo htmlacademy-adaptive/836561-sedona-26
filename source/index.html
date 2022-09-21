@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
@@ -42,7 +42,7 @@
   <main class="main-container">
     <section class="page-welcome">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <img src="img/welcome-logo.svg" width="282" height="214" alt="Добро пожаловать в великолепный город Седона">
+      <img class="page-welcome__logo" src="img/welcome-logo.svg" width="282" height="214" alt="Добро пожаловать в великолепный город Седона">
     </section>
 
     <section class="page-description">
@@ -56,19 +56,19 @@
         <ol class="advantages__list advantages-list">
           <li class="advantages__item advantages__item--image-city">
             <div class="advantages__item-wrapper">
-              <div class="advantages__container">
+              <div class="advantages__container advantages__container--decorative">
                 <h3 class="advantages__title">Настоящий городок</h3>
-                <p class="advantages__description">— №1 —</p>
-                <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="advantages__number">— №1 —</p>
+                <p class="advantages__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="advantages__image-city-container">
                 <picture>
                   <source media="(min-width: 1200px)"
-                    srcset="/img/advantage-1-desktop.jpg 1x, img/advantage-1-desktop@2x.jpg 2x">
+                    srcset="img/advantage-1-desktop.jpg 1x, img/advantage-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                    srcset="/img/advantage-1-tablet.jpg 1x, img/advantage-1-tablet@2x.jpg 2x">
-                  <img class="advantages__image-city" src="../img/advantage-1-mobile.jpg"
-                    srcset="/img/advantage-1-mobile@2x.jpg 2x" width="320" height="260"
+                    srcset="img/advantage-1-tablet.jpg 1x, img/advantage-1-tablet@2x.jpg 2x">
+                  <img class="advantages__image-city" src="img/advantage-1-mobile.jpg"
+                    srcset="img/advantage-1-mobile@2x.jpg 2x" width="320" height="260"
                     alt="Двухэтажный нежилой дом коммерческого использования">
                 </picture>
               </div>
@@ -85,46 +85,44 @@
                   бургер, вы не разочаруетесь!</p>
               </li>
               <li class="advantages-item-list__item advantages-item-list__item--souvenir">
-                <p class="advantages__title advantages-item-list__title">Сувениры</p>
+                <p class="advantages__title advantages-item-list__title advantages-item-list__title--souvenir">Сувениры</p>
                 <p class="advantages__description advantages-item-list__description">Не только китайского, но и местного
                   производства!</p>
               </li>
             </ul>
           </li>
           <li class="advantages__item advantages__item--image-bridge">
-            <div class="advantages__item-wrapper">
+            <div class="advantages__item-wrapper advantages__item-wrapper--order">
               <div class="advantages__image-bridge-container">
                 <picture>
                   <source media="(min-width: 1200px)"
-                    srcset="/img/advantage-2-desktop.jpg 1x, img/advantage-2-desktop@2x.jpg 2x">
+                    srcset="img/advantage-2-desktop.jpg 1x, img/advantage-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)"
-                    srcset="/img/advantage-2-tablet.jpg 1x, img/advantage-2-tablet@2x.jpg 2x">
-                  <img class="advantages__image-bridge" src="../img/advantage-2-mobile.jpg"
-                    srcset="/img/advantage-2-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола">
+                    srcset="img/advantage-2-tablet.jpg 1x, img/advantage-2-tablet@2x.jpg 2x">
+                  <img class="advantages__image-bridge" src="img/advantage-2-mobile.jpg"
+                    srcset="img/advantage-2-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола">
                 </picture>
               </div>
-
-
-              <div class="advantages__container">
+              <div class="advantages__container advantages__container--short">
                 <h3 class="advantages__title"> Там есть мост дьявола</h3>
-                <p class="advantages__description">— №2 —</p>
+                <p class="advantages__number">— №2 —</p>
                 <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
             </div>
           </li>
           <li class="advantages__item advantages__item--color">
             <h3 class="advantages__title">Небольшая площадь</h3>
-            <p class="advantages__description">— №3 —</p>
+            <p class="advantages__number">— №3 —</p>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages__item advantages__item--color">
             <h3 class="advantages__title">Красивая дорога</h3>
-            <p class="advantages__description">— №4 —</p>
+            <p class="advantages__number">— №4 —</p>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages__item advantages__item--color">
             <h3 class="advantages__title">Мало туристов </h3>
-            <p class="advantages__description">— №5 —</p>
+            <p class="advantages__number">— №5 —</p>
             <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>
@@ -134,7 +132,7 @@
     <section class="searching">
       <div class="searching__wrapper">
         <h2 class="searching__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p class="searching__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+        <p class="searching__description">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения
           гостиниц в седоне</p>
         <a class="searching__button button" href="#">найти гостиницу</a>
       </div>
@@ -187,12 +185,12 @@
       <div class="page-footer__copyright copyright">
         <h2 class="copyright__text">Разработано</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/">
-          <img class="copyright__image" src="img/copyright.svg" width="30" height="34" alt="Логотип htmlacademy">
+          <img class="copyright__image" src="img/copyright.svg" width="27" height="34" alt="Логотип htmlacademy">
         </a>
       </div>
     </div>
   </footer>
-  <script src="./js/app.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

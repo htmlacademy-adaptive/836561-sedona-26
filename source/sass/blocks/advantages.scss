@@ -9,18 +9,9 @@
   }
 }
 
-// .advantages__wrapper {
-//   display: flex;
-//   flex-direction: column;
-
-//   @media (min-width: $tablet-width) {
-//     flex-direction: row;
-//   }
-// }
-
 .advantages__item {
   text-align: center;
-  padding: 26px 24px 6px;
+  padding: 26px 36px 6px;
 
 
   @media (min-width: $tablet-width) {
@@ -54,11 +45,17 @@
 }
 
 .advantages__item-wrapper {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.advantages__item-wrapper--order {
+  flex-direction: column-reverse;
 }
 
 .advantages__image-city-container {
@@ -83,14 +80,17 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    font-size: 21px;
     text-align: center;
+    max-width: 150px;
+    margin: 0 auto 15px;
   }
 }
 
@@ -104,16 +104,68 @@
   @media (min-width: $tablet-width) {
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 25px;
+  }
+}
+
+.advantages__number {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .advantages__container {
   flex-direction: column;
-  padding: 39px 18px 17px;
+  padding: 50px 22px 19px 17px;
   text-align: center;
   color: #ffffff;
   background-color: $blue;
 
   @media (min-width: $tablet-width) {
-    padding: 42px 36px 23px;
+    padding: 42px 30px 23px;
+  }
+}
+
+.advantages__container--decorative {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 49px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/advantages-decorative-mobile.svg");
+    background-position-x: center;
+    height: 37px;
+    top: -22px;
+    width: 100%;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      background: none;
+    }
+  }
+}
+
+.advantages__container--short {
+  padding-top: 40px;
+  padding-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
   }
 }

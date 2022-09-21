@@ -3,13 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
@@ -42,11 +41,11 @@
 
   <main class="catalog">
     <section class="page-welcome page-welcome--short">
-      <img src="img/welcome-logo-short.svg" width="229" height="39" alt="Добро пожаловать в великолепный город Седона">
+      <img class="page-welcome__logo-short" src="img/welcome-logo-short.svg" width="229" height="39" alt="Добро пожаловать в великолепный город Седона">
     </section>
 
-    <section class="page-description">
-      <h1 class="page-description__title">Фото и видео</h1>
+    <section class="page-description page-description--catalog">
+      <h1 class="page-description__title page-description__title--catalog">Фото и видео</h1>
       <p class="page-description__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
         политике и экономике.</p>
     </section>
@@ -57,11 +56,11 @@
         <li class="catalog-photos__item catalog-item">
           <picture>
             <source media="(min-width: 1200px)"
-              srcset="../img/card-sunset-desktop.jpg 1x, img/card-sunset-desktop@2x.jpg 2x">
+              srcset="img/card-sunset-desktop.jpg 1x, img/card-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-              srcset="../img/card-sunset-tablet.jpg 1x, img/card-sunset-tablet@2x.jpg 2x">
-            <img class="catalog-item__image" src="../img/card-sunset-mobile.jpg"
-              srcset="../img/card-sunset-mobile@2x.jpg 2x" width="280" height="280"
+              srcset="img/card-sunset-tablet.jpg 1x, img/card-sunset-tablet@2x.jpg 2x">
+            <img class="catalog-item__image" src="img/card-sunset-mobile.jpg"
+              srcset="img/card-sunset-mobile@2x.jpg 2x" width="280" height="280"
               alt="Загородная трасса на фоне заката">
           </picture>
           <div class="catalog-item__container">
@@ -72,7 +71,7 @@
             <div class="catalog-item__button-wrapper">
               <button class="catalog-item__button-like" type="button">
                 <svg class="catalog-item__icon-like" width="24" height="24" aria-label="Поставить лайк">
-                  <use xlink:href="img/sprite.svg#like"></use>
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
                 </svg>
               </button>
               <span class="catalog-item__like-counter">1350</span>
@@ -82,11 +81,11 @@
         <li class="catalog-photos__item catalog-item">
           <picture>
             <source media="(min-width: 1200px)"
-              srcset="../img/card-cactus-desktop.jpg 1x, img/card-cactus-desktop@2x.jpg 2x">
+              srcset="img/card-cactus-desktop.jpg 1x, img/card-cactus-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-              srcset="../img/card-cactus-tablet.jpg 1x, img/card-cactus-tablet@2x.jpg 2x">
-            <img class="catalog-item__image" src="../img/card-cactus-mobile.jpg"
-              srcset="../img/card-cactus-mobile@2x.jpg 2x" width="280" height="280"
+              srcset="img/card-cactus-tablet.jpg 1x, img/card-cactus-tablet@2x.jpg 2x">
+            <img class="catalog-item__image" src="img/card-cactus-mobile.jpg"
+              srcset="img/card-cactus-mobile@2x.jpg 2x" width="280" height="280"
               alt="Кактус на фоне красных скал Седоны">
           </picture>
           <div class="catalog-item__container">
@@ -97,7 +96,7 @@
             <div class="catalog-item__button-wrapper">
               <button class="catalog-item__button-like" type="button">
                 <svg class="catalog-item__icon-like" width="24" height="24" aria-label="Поставить лайк">
-                  <use xlink:href="img/sprite.svg#like"></use>
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
                 </svg>
               </button>
               <span class="catalog-item__like-counter">143</span>
@@ -107,11 +106,11 @@
         <li class="catalog-photos__item catalog-item">
           <picture>
             <source media="(min-width: 1200px)"
-              srcset="../img/card-forest-desktop.jpg 1x, img/card-forest-desktop@2x.jpg 2x">
+              srcset="img/card-forest-desktop.jpg 1x, img/card-forest-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-              srcset="../img/card-forest-tablet.jpg 1x, img/card-forest-tablet@2x.jpg 2x">
-            <img class="catalog-item__image" src="../img/card-forest-mobile.jpg"
-              srcset="../img/card-forest-mobile@2x.jpg 2x" width="280" height="280"
+              srcset="img/card-forest-tablet.jpg 1x, img/card-forest-tablet@2x.jpg 2x">
+            <img class="catalog-item__image" src="img/card-forest-mobile.jpg"
+              srcset="img/card-forest-mobile@2x.jpg 2x" width="280" height="280"
               alt="Дорога в виде горного серпантина">
           </picture>
           <div class="catalog-item__container">
@@ -122,7 +121,7 @@
             <div class="catalog-item__button-wrapper">
               <button class="catalog-item__button-like" type="button">
                 <svg class="catalog-item__icon-like" width="24" height="24" aria-label="Поставить лайк">
-                  <use xlink:href="img/sprite.svg#like"></use>
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
                 </svg>
               </button>
               <span class="catalog-item__like-counter">96</span>
@@ -146,7 +145,7 @@
             <div class="catalog-item__button-wrapper">
               <button class="catalog-item__button-like" type="button">
                 <svg class="catalog-item__icon-like" width="24" height="24" aria-label="Поставить лайк">
-                  <use xlink:href="img/sprite.svg#like"></use>
+                  <use xlink:href="img/sprite.svg#like-icon"></use>
                 </svg>
               </button>
               <span class="catalog-item__like-counter">254</span>
@@ -165,7 +164,7 @@
             srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)"
             srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
-          <img class="catalog-item__image" src="img/video-preview-mobile.jpg"
+          <img class="catalog-video__image" src="img/video-preview-mobile.jpg"
             srcset="img/video-preview-mobile@2x.jpg 2x" width="280" height="177"
             alt="Загородная трасса на фоне заката">
         </picture>
@@ -210,12 +209,12 @@
       <div class="page-footer__copyright copyright">
         <h2 class="copyright__text">Разработано</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/">
-          <img class="copyright__image" src="img/copyright.svg" width="30" height="34" alt="Логотип htmlacademy">
+          <img class="copyright__image" src="img/copyright.svg" width="27" height="34" alt="Логотип htmlacademy">
         </a>
       </div>
     </div>
   </footer>
-  <script src="./js/app.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
