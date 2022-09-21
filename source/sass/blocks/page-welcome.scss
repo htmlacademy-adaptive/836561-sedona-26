@@ -1,5 +1,5 @@
 .page-welcome {
-  padding: 90px 0;
+  padding: 90px 0 78px;
   background-color: #acdbf9;
   background-image: url("/img/description-background.jpg");
   background-repeat: no-repeat;
@@ -9,7 +9,8 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 78px;
+    padding-top: 77px;
+    padding-bottom: 83px;
   }
 
   @media (min-resolution: 2dppx) {
@@ -30,5 +31,25 @@
 }
 
 .page-welcome--short {
-  padding: 103px 0 122px;
+  @media (min-width: $tablet-width) {
+    padding: 95px 0 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 102px 0 114px;
+  }
+}
+
+.page-welcome__logo {
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
+
+.page-welcome__logo-short {
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 77px;
+  }
 }

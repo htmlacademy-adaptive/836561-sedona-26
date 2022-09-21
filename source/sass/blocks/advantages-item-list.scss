@@ -1,7 +1,7 @@
 .advantages-item-list {
   display: grid;
   list-style-type: none;
-  padding: 0 20px;
+  padding: 20px 20px 35px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, 1fr);
@@ -13,15 +13,20 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 52px;
-  padding-top: 31px;
+  padding-left: 40px;
+  padding-top: 12px;
   background-repeat: no-repeat;
-  background-position-y: 23px;
+  background-position-x: -2px;
+  background-position-y: 4px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
     padding: 158px 32px 42px;
     background-position: 50% 60px;
+  }
+  @media (min-width: $desktop-width) {
+    align-items: center;
+padding-bottom: 62px;
   }
 }
 
@@ -38,12 +43,22 @@
 }
 
 .advantages-item-list__title {
+  padding-left: 6px;
   margin: 0;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.advantages-item-list__title--souvenir {
+  padding-left: 2px;
 }
 
 .advantages-item-list__description {
   text-align: left;
+  padding-left: 5px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
