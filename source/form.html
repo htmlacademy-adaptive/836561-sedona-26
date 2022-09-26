@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оставить отзыв о Седоне</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -61,15 +63,15 @@
           <legend class="form__legend">Представьтесь:</legend>
           <label class="form__label">
             <span class="form__label-heading">ИМЯ*:</span>
-            <input class="form__input" type="text" value="Пётр">
+            <input class="form__input" type="text" value="Пётр" placeholder="Введите имя">
           </label>
           <label class="form__label">
             <span class="form__label-heading">ФАМИЛИЯ*:</span>
-            <input class="form__input" type="text" value="Пустота">
+            <input class="form__input" type="text" value="Пустота" placeholder="Введите фамилию">
           </label>
           <label class="form__label">
             <span class="form__label-heading">Отчество:</span>
-            <input class="form__input" type="text" value="Викторович">
+            <input class="form__input" type="text" value="Викторович" placeholder="Введите отчество">
           </label>
         </fieldset>
 
@@ -181,9 +183,11 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <h2 class="copyright__text">Разработано</h2>
-        <a class="copyright__link" href="https://htmlacademy.ru/">
-          <img class="copyright__image" src="img/copyright.svg" width="27" height="34" alt="Логотип htmlacademy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <svg class="copyright__image" width="27" height="34" fill="currentColor">
+            <use xlink:href="img/sprite.svg#copyright"></use>
+          </svg>
+          <span class="visually-hidden">Перейти на сайт разработчика</span>
         </a>
       </div>
     </div>

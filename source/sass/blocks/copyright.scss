@@ -1,11 +1,23 @@
-.copyright__text {
-  margin-right: 13px;
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  align-items: center;
+  padding-top: 4px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-}
+  text-decoration: none;
+  color: #000000;
 
-.copyright__link {
-  padding-top: 4px;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
 }

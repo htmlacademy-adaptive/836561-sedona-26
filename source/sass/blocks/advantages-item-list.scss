@@ -22,11 +22,13 @@
   @media (min-width: $tablet-width) {
     align-items: center;
     padding: 158px 32px 42px;
-    background-position: 50% 60px;
+    background-position: 50% 59px;
+    background-size: 77px;
   }
+
   @media (min-width: $desktop-width) {
     align-items: center;
-padding-bottom: 62px;
+    padding-bottom: 62px;
   }
 }
 
@@ -62,5 +64,13 @@ padding-bottom: 62px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
+  }
+}
+
+.advantages-item-list__description br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

@@ -148,12 +148,9 @@
 }
 
 .form__input:focus {
-  outline: 2px solid #5496bd;
-  background-color: $lightgrey;
-}
-
-.form__input:active {
   background-color: #ffffff;
+  outline: 4px solid $lightgrey;
+  outline-offset: -4px;
 }
 
 .form__input::placeholder {
@@ -198,8 +195,26 @@
   }
 }
 
+.form__button-submit {
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496BD;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &:disabled {
+      background-color: $lightgrey;
+    }
+  }
+}
+
 .form__input--textarea {
-  resize: vertical;
+  resize: none;
 }
 
 .form__warning {

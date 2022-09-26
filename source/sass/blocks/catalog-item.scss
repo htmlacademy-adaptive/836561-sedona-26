@@ -1,3 +1,12 @@
+.catalog-item__link {
+  text-decoration: none;
+  color: #000000;
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
+}
+
 .catalog-item__container {
   display: flex;
   flex-direction: column;
@@ -58,7 +67,7 @@
   line-height: 21px;
 }
 
-.catalog-item__button-wrapper {
+.catalog-item__link-wrapper {
   display: flex;
   align-items: center;
 
@@ -71,18 +80,29 @@
   border: none;
   background: none;
   padding: 0;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-top: 7px;
   }
 
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .catalog-item__icon-like {
-  fill: rgba(0, 0, 0, 0.3);
+  // fill: rgba(0, 0, 0, 0.3);
+  fill: #000000;
+  opacity: 0.3;
 
   @media (min-width: $desktop-width) {
     fill: #ffffff;
+    opacity: 1;
   }
 }
 
