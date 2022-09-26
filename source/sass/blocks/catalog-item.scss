@@ -33,6 +33,7 @@
 .catalog-item__image {
   display: block;
   width: 100%;
+  min-height: 280px;
   object-fit: cover;
   margin-bottom: 15px;
   background-color: #acdbf9;
@@ -115,5 +116,4 @@
   @media (min-width: $tablet-width) {
     margin-left: 6px;
   }
-
 }
