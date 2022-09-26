@@ -30,17 +30,27 @@
 
 .searching__description {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 21px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 50px;
   }
 }
+
+.searching__description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 
 .searching__button {
   display: block;

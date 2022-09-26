@@ -59,10 +59,6 @@
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
     font-size: 21px;
     margin-bottom: 26px;
   }
@@ -70,7 +66,7 @@
 
 .page-description__title--catalog,
 .page-description__title--form {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
   }
 
@@ -87,11 +83,17 @@
     margin-left: auto;
     margin-right: auto;
     line-height: 24px;
-    max-width: 437px;
+    max-width: 500px;
   }
 
   @media (min-width: $desktop-width) {
     line-height: 26px;
     max-width: 500px;
+  }
+}
+
+.page-description__text--catalog {
+  @media (min-width: $tablet-width) {
+    max-width: 435px;
   }
 }
