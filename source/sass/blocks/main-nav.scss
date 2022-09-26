@@ -157,8 +157,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    &:hover {
+      color: $blue;
+      outline: none;
+    }
 
-    &:hover,
     &:focus {
       color: $blue;
       outline: none;

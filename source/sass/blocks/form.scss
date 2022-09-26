@@ -19,9 +19,14 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 15px 0 39px;
+  padding: 20px 0 23px;
   border: none;
   border-bottom: 1px solid $lightgrey;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
 }
 
 .form__fieldset--contacts .form__legend {
@@ -40,7 +45,7 @@
 }
 
 .form__fieldset--impression .form__legend {
-  padding-top: 2px;
+  padding-top: 24px;
 
   @media (min-width: $desktop-width) {
     padding-top: 7px;
@@ -49,16 +54,15 @@
 }
 
 .form__fieldset--attractions .form__legend {
-  padding-top: 0;
+  padding-top: 24px;
 }
-
-
 
 .form__fieldset--impression,
 .form__fieldset--attractions,
 .form__fieldset--emotions {
   @media (min-width: $tablet-width) {
     grid-column: span 2;
+    border-top: 1px solid $lightgrey;
   }
 }
 
@@ -71,7 +75,7 @@
 }
 
 .form__legend {
-  padding-top: 15px;
+  padding-top: 24px;
   margin-bottom: 5px;
   text-align: center;
   text-transform: uppercase;
@@ -84,7 +88,12 @@
     font-size: 21px;
     padding-top: 10px;
     padding-left: 10px;
+    width: 400px;
   }
+}
+
+.form__legend--textarea {
+  margin-bottom: 28px;
 }
 
 .form__fieldset-wrapper {
@@ -196,14 +205,19 @@
 }
 
 .form__button-submit {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
 
   @media (min-width: $desktop-width) {
+    width: 384px;
+
     &:hover {
       background-color: #669ec0;
     }
 
     &:active {
-      background-color: #5496BD;
+      background-color: #5496bd;
       color: rgba(255, 255, 255, 0.3);
     }
 
